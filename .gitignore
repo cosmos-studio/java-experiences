@@ -6,3 +6,9 @@ gradlew.bat
 
 # IDE: IntelliJ IDEA
 .idea/
+*.iml
+*.ipr
+*.iws
+
+#java
+build/
