@@ -5,6 +5,7 @@ gradlew
 gradlew.bat
 
 # IDE: IntelliJ IDEA
+out/
 .idea/
 *.iml
 *.ipr

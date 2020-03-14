@@ -1,4 +1,6 @@
 plugins {
+    id 'java'
+    id 'groovy'
     id 'idea'
 }
 
@@ -9,13 +11,37 @@ idea {
     }
 }
 
-apply plugin: 'java'
 sourceCompatibility = 1.8
 
 group 'ilove'
 version '1.0-SNAPSHOT'
 
+repositories {
+    mavenLocal()
+    // https://maven.aliyun.com/mvn/guide
+    maven { url 'https://maven.aliyun.com/repository/public' }
+    //expired: maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    mavenCentral()
+}
+
 dependencies {
+    // librarys added by me
+    implementation 'cglib:cglib-nodep:3.1'
+
+//    implementation group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
+
+    implementation 'org.springframework:spring-core:5.2.8.RELEASE'
+    implementation 'org.springframework:spring-beans:5.2.8.RELEASE'
+    implementation 'org.springframework:spring-aop:5.2.8.RELEASE'
+    implementation 'org.springframework:spring-context:5.2.8.RELEASE'
+    implementation 'org.springframework:spring-jdbc:5.2.8.RELEASE'
+    implementation 'org.springframework:spring-tx:5.2.8.RELEASE'
+
+    // https://mvnrepository.com/artifact/javax.jms/jms
+    compile group: 'javax.jms', name: 'jms', version: '1.1'
+    // https://mvnrepository.com/artifact/javax.jms/jms
+//    compile group: 'javax.jms', name: 'jms', version: '2.0'
+
 
     // librarys
     // https://mvnrepository.com/artifact/org.dom4j/dom4j
@@ -32,12 +58,13 @@ dependencies {
 //    implementation group: 'commons-httpclient', name: 'commons-httpclient', version: '3.1'
 //    implementation group: 'commons-io', name: 'commons-io', version: '1.4'
     implementation group: 'commons-lang', name: 'commons-lang', version: '2.3'
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
 //    implementation group: 'commons-logging', name: 'commons-logging', version: '1.1.1'
 //    implementation group: 'com.thoughtworks.xstream', name: 'xstream', version: '1.3'
-//    implementation group: 'com.sun.messaging.mq', name: 'imq', version: '4.3'
+    implementation group: 'com.sun.messaging.mq', name: 'imq', version: '4.3'
 //    implementation group: 'jaxen', name: 'jaxen', version: '1.1'
 //    implementation group: 'org.apache.xbean', name: 'xbean-spring', version: '4.5'
-//    implementation group: 'org.apache.velocity', name: 'velocity', version: '1.5'
+    implementation group: 'org.apache.velocity', name: 'velocity', version: '1.5'
     implementation group: 'com.google.guava', name: 'guava', version: '14.0.1'
     implementation group: 'org.apache.poi', name: 'poi', version: '3.10.1'
     implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '3.10.1'
@@ -82,7 +109,10 @@ dependencies {
     implementation group: 'org.aspectj', name: 'aspectjrt', version: '1.8.5'
 
     // Test Dependencies
-    testImplementation group: 'junit', name: 'junit', version: '4.9'
+    testImplementation 'org.spockframework:spock-core:1.0-groovy-2.4'
+    testRuntime 'org.codehaus.groovy:groovy-all:2.4.1'
+
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
     testImplementation group: 'org.mockito', name: 'mockito-core', version: '1.10.19'
     testImplementation group: 'org.powermock', name: 'powermock-module-junit4', version: '1.6.5'
     testImplementation group: 'org.powermock', name: 'powermock-api-mockito', version: '1.6.5'
@@ -95,9 +125,4 @@ dependencies {
     testImplementation group: 'org.easymock', name: 'easymockclassextension', version: '2.5.2'
 }
 
-repositories {
-    mavenLocal()
-    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
-    mavenCentral()
-}
 
