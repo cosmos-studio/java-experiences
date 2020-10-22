@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.font-color-red {
+	color: red;
+}
+
+.font-color-blue {
+	color: blue;
+}
+
+#msg1 {
+	color: #006fff;
+}
+
+#msg2 {
+	color: #5903ff;
+}

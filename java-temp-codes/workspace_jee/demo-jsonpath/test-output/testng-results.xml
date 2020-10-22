@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1037" started-at="2017-05-09T08:47:57Z" finished-at="2017-05-09T08:47:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1037" started-at="2017-05-09T08:47:57Z" finished-at="2017-05-09T08:47:59Z">
+      <class name="cn.usmile365.jsonpath.TestJson">
+        <test-method status="PASS" signature="testJson2()[pri:0, instance:cn.usmile365.jsonpath.TestJson@458ad742]" name="testJson2" duration-ms="1014" started-at="2017-05-09T16:47:57Z" finished-at="2017-05-09T16:47:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJson2 -->
+      </class> <!-- cn.usmile365.jsonpath.TestJson -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

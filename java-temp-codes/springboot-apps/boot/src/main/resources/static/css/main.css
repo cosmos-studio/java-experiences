@@ -1,0 +1,29 @@
+body {
+	padding-top: 60px;
+	／*
+	background:url("../image/index.jpg") no-repeat;
+	background-size: 100%;
+	*／
+}
+
+#img-logo {
+	max-height:40px;
+	max-width: 40px;
+	margin-top:-10px;
+	opacity:1.0;
+}
+
+.img-rounded {
+	display: inline-block;
+	max-width: 100%;
+}
+
+.full-screen {
+	max-height: 100%;
+}
+
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}

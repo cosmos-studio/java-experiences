@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>javascript modules basic</title>
+<script type="text/javascript" src="../js/test1.js"></script>
+</head>
+<body>
+
+<hr style="border-bottom: 1px solid blank;"/>
+<h2 style="border-bottom: 1px solid blue;">JS 模块化</h2>
+<button onclick="mytest1()">1 原始写法（直接）</button>
+<button onclick="mytest2()">2 原始写法（间接）</button>
+<br/><button onclick="mytest3.method()">3 对象写法</button>
+<br/><button onclick="mytest4.m1()">4 立即执行函数(IIFE)写法</button>
+<br/><button onclick="mytest5.nmx()">5. 放大模式(新模块调用)</button>
+<button onclick="mytest4.nmx()">放大模式(新模块调用)</button>
+<button onclick="mytest5.m1()">放大模式（新模块调用原有方法）</button>
+<br/><button onclick="mytest6.test();">6. 宽放大模式</button>
+</body>
+</html>

@@ -1,0 +1,9 @@
+https://github.com/scrapy/quotesbot
+https://github.com/ioanbsu/java-puzzlers
+https://github.com/shekhargulati/java8-the-missing-tutorial
+https://github.com/shekhargulati/strman-java
+https://github.com/RichardWarburton/java-8-lambdas-exercises
+https://github.com/whzhaochao/spring-jetty-jersey-mybatis
+https://github.com/dsyer/spring-boot-jersey
+https://github.com/geowarin/springboot-jersey
+

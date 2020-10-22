@@ -1,0 +1,18 @@
+package com.example.demo.config;
+
+import javax.ws.rs.ApplicationPath;
+
+import org.glassfish.jersey.server.ResourceConfig;
+import org.springframework.stereotype.Component;
+
+import com.example.demo.res.RestResource;
+
+@Component
+@ApplicationPath("webapi")
+public class Jersey2Config extends ResourceConfig {
+	
+	{
+		register(RestResource.class);
+	}
+
+}

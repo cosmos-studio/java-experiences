@@ -1,0 +1,22 @@
+
+task startSession {
+	chant()
+}
+
+def chant() {
+	ant.echo(message: "Report after me...")
+}
+
+3.times {
+	task "yayGradle$it"  {
+		doLast() {
+			println 'Gradle rocks: ' + it.name
+		}
+	}
+}
+
+yayGradle0.dependsOn startSession
+yayGradle2.dependsOn yayGradle1, yayGradle0
+//yayGradle1.dependsOn yayGradle0
+task groupTherapy(dependsOn: yayGradle2)
+

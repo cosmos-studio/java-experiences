@@ -1,0 +1,8 @@
+task helloWorld {
+	doLast() {
+		println "doLast() Action"
+		println "Hello Gradle World!"
+		println "---Jacob Zhao"
+	}
+	
+}

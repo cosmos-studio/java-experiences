@@ -1,0 +1,17 @@
+#gradle
+/.gradle/
+
+#eclipse
+/.settings/
+/bin/
+.project
+.classpath
+
+#IDEA
+/out/*
+*.iml
+*.ipr
+*.iws
+
+#TestNG
+test-output/

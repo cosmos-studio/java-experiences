@@ -1,0 +1,10 @@
+#application server
+server.port=8080
+server.servlet.context-path=/boot2
+
+#freemarker
+spring.freemarker.enabled=true
+spring.freemarker.cache=false
+
+#mybatis print debug log
+logging.level.com.example.demo.dao=DEBUG

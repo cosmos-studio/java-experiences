@@ -1,0 +1,46 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.7
+version = '1.0'
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Quickstart',
+                   'Implementation-Version': version
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+	// https://mvnrepository.com/artifact/org.mockito/mockito-core
+	testCompile group: 'org.mockito', name: 'mockito-core', version: '2.3.11'
+	// https://mvnrepository.com/artifact/org.powermock/powermock-reflect
+	compile group: 'org.powermock', name: 'powermock-reflect', version: '1.6.6'
+	// https://mvnrepository.com/artifact/org.powermock/powermock-core
+	testCompile group: 'org.powermock', name: 'powermock-core', version: '1.6.6'
+	// https://mvnrepository.com/artifact/org.powermock/powermock-api-mockito
+	testCompile group: 'org.powermock', name: 'powermock-api-mockito', version: '1.6.6'
+	// https://mvnrepository.com/artifact/org.powermock/powermock-module-junit4
+	testCompile group: 'org.powermock', name: 'powermock-module-junit4', version: '1.6.6'
+	// https://mvnrepository.com/artifact/org.powermock/powermock-module-testng
+	testCompile group: 'org.powermock', name: 'powermock-module-testng', version: '1.6.6'
+	
+}
+
+test {
+    systemProperties 'property': 'value'
+}
+
+uploadArchives {
+    repositories {
+       flatDir {
+           dirs 'repos'
+       }
+    }
+}

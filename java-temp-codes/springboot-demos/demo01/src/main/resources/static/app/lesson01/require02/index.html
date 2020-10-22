@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>require-2</title>
+    <script type="text/javascript" data-main="./module1" src="../../../lib/requireJS/require.js"></script>
+    <script type="text/javascript" src="../../../lib/jquery.js"></script>
+    <script type="text/javascript">
+    /* window.onload = function() {
+    	require(['module2']);
+    } */
+    </script>
+    <link rel="stylesheet" type="text/css" href="module.css"/>
+  </head>
+  <body>
+    <span>Hello world!</span>
+    <br/><span id="msg1"></span>
+    <br/><span id="msg2"></span>
+    
+  <script type="text/javascript">
+  require(['module2']);
+  </script>
+  </body>
+</html>

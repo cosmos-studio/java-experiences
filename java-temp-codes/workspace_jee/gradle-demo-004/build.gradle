@@ -1,0 +1,29 @@
+apply plugin: 'java'
+
+setDescription('This is a Gradle Test project')
+println 'Description of project '+ project.name + ": " + project.description
+
+version = '0.1-SNAPSHOT'
+sourceCompatibility = 1.7
+
+sourceSets {
+	main {
+		java {
+			srcDirs = [ 'src']
+		}
+	}
+	
+	test {
+		java {
+			srcDirs = ['test']
+		}
+	}
+}
+
+buildDir = 'out'
+
+jar {
+	manifest {
+		attributes 'Main-Class':'gradle.todo.ToDoApp' 
+	}
+}

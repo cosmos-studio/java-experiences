@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ImageFlow</string>
+    <string name="pic_btn">打开相册</string>
+</resources>

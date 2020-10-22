@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /boots
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://qdm182967662.my3w.com:3306/qdm182967662_db?useUnicode=true&characterEncoding=utf8
+    username: qdm182967662
+    password: xxxxxxxxx
+  freemarker:
+    enabled: true
+    cache: false
+
+logging:
+  level: #日志级别
+    com.example.demo.dao: DEBUG

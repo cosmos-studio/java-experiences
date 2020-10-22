@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <parameter name="key1" value="value....."/>
+  <test name="cn.usmile365(failed)">
+    <parameter name="key2" value="value___"/>
+    <classes>
+      <class name="com.wesmile365.demo2.PrintContext">
+        <methods>
+          <include name="printContext1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.wesmile365.demo2.PrintContext -->
+    </classes>
+  </test> <!-- cn.usmile365(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

@@ -1,0 +1,26 @@
+apply plugin: 'java'
+
+version = '0.1-SNAPSHOT'
+sourceCompatibility = 1.7
+
+sourceSets {
+	main {
+		java {
+			srcDirs = [ 'src']
+		}
+	}
+	
+	test {
+		java {
+			srcDirs = ['test']
+		}
+	}
+}
+
+buildDir = 'out'
+
+jar {
+	manifest {
+		attributes 'Main-Class':'gradle.todo.ToDoApp' 
+	}
+}

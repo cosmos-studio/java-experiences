@@ -1,0 +1,4 @@
+需要注意的是：
+再Eclipse命令行提示的换行信息有误是可设置这两个参数。
+-Djline.WindowsTerminal.directConsole=true
+-Djline.terminal=jline.UnsupportedTerminal

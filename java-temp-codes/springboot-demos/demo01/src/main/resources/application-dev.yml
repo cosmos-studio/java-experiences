@@ -1,0 +1,13 @@
+server:
+    port: 8080
+    servlet:
+        context-path: /boot2
+
+spring:
+    freemarker:
+        enabled: true
+        cache: false
+
+logging:
+    level:
+        com.example.demo.dao: DEBUG
